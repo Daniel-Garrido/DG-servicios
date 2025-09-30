@@ -1,0 +1,95 @@
+.bg-dark{
+  background-color: #282828 !important;
+}
+
+.bg-dark2{
+  background-color:  #3B3C40 !important;
+}
+
+.text-white2{
+  color: #c2c2c2;
+}
+
+/* ===== HEADER ===== */
+.seccion_header_avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.seccion_header_redes_sociales a {
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+/* ===== Seccion de Tabs ===== */
+
+.contenedor-nav {
+  background-color: #272729;
+  gap: 10px;
+}
+
+.seccion_tabs .nav-pills .nav-link {
+  padding: 10px 50px;
+  color: white;
+  background-color: #3B3C40;
+  border: 1px solid #3B3C40;
+}
+
+.seccion_tabs .nav-pills .nav-link.active {
+  background-color: #272729;
+  border: 1px solid #c2c2c2;
+}
+
+/* =====Seccion de  Servicios ===== */
+.seccion_servicios_card {
+  border: 1px solid white;
+  border-radius: 1rem;
+}
+
+/* =====Seccion de Proyectos ===== */
+.seccion_proyectos_card {
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.seccion_proyectos_card img {
+  object-fit: cover;
+  height: 150px;
+}
+
+.seccion_proyectos_card:hover {
+  transform: translateY(-4px);
+}
+
+/* =====Seccion de Preguntas Frecuentes ===== */
+.accordion-button {
+  border-bottom: 1px solid #c2c2c2;
+}
+
+.accordion-button::after {
+  filter: invert(1);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #212529;
+  color: #fff;
+  box-shadow: none;
+}
+
+/* =====Estilos al boton de WhatsApp ===== */
+.seccion_whatsapp_btn {
+  position: fixed;
+  right: 18px;
+  bottom: 300px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 1.6rem;
+  z-index: 1050;
+}
