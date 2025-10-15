@@ -1,3 +1,15 @@
+h1,h2{
+  font-size: 1.8rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+body{
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+}
+
+
 .bg-dark{
   background-color: #282828 !important;
 }
@@ -18,14 +30,14 @@
   object-fit: cover;
 }
 
+
 .seccion_header_redes_sociales a {
   padding: 10px;
-  border: 1px solid white;
+  background-color:  #3B3C40 !important;
   border-radius: 5px;
 }
 
 /* ===== Seccion de Tabs ===== */
-
 .contenedor-nav {
   background-color: #272729;
   gap: 10px;
@@ -65,6 +77,16 @@
   transform: translateY(-4px);
 }
 
+/* seccion del contenedor del modal  */
+.modal-content {
+  color: white;
+  background-color:  #3B3C40 !important;
+}
+
+.btn-close{
+  background-color: white;
+}
+
 /* =====Seccion de Preguntas Frecuentes ===== */
 .accordion-button {
   border-bottom: 1px solid #c2c2c2;
@@ -84,12 +106,19 @@
 .seccion_whatsapp_btn {
   position: fixed;
   right: 18px;
-  bottom: 300px;
+  bottom: 50px;
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.8em; 
+  background-color: #25D366;
+  color: #fff;
   z-index: 1050;
+}
+
+.fa-whatsapp {
+  font-size: 1em; 
 }

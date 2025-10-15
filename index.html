@@ -11,28 +11,37 @@
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <!-- Icons (Bootstrap Icons) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-  <!-- Custom CSS -->
-  <link href="styles.css" rel="stylesheet">
+  <!-- Libreria FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <!-- Libreria google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <!-- CSS Local -->
+  <link href="CSS/styles.css" rel="stylesheet">
   <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
 <body data-bs-spy="scroll">
   
-
   <!-- =====SECCION DE HEADER ===== -->
   <header id="header" class="seccion_header bg-dark pt-4">
-    <div class="container bg-dark">
-      <div class="row justify-content-center">
+    <div class="container bg-dark mt-4">
+      <div class="row justify-content-center ">
 
         <div class="col-lg-8 text-center" data-aos="fade-up">
-          <img src="img/logo.png"  class="seccion_header_avatar mb-3" />
-          <h1 class="fw-bold  text-white">Daniel Garrido</h1>
-          <p class=" text-light">Desarrollador Web</p>
+          <img src="img/FOTO-HEADER.webp"  class="seccion_header_avatar mb-3" />
+          <h1 class="text-white">Daniel Garrido</h1>
+          <p class="text-light">Desarrollador Web</p>
          
           <!-- contenedor de las redes sociales -->
-          <div class="seccion_header_redes_sociales justify-content-center gap-3">
-            <a class="text-white" target="_blank" href="https://www.instagram.com/daniel.garrido_/"><i class="bi bi-instagram fs-4"></i></a>
-            <a class="text-white" target="_blank" href="https://www.facebook.com/DanielGarridotec"><i class="bi bi-facebook fs-4"></i></a>
-            <a class="text-white" target="_blank" href="https://www.tiktok.com/@daniel.garrido_"><i class="bi bi-tiktok fs-4"></i></a>
+          <div class="seccion_header_redes_sociales d-flex justify-content-center gap-2">
+            <a class="text-white" target="_blank" href="https://www.instagram.com/daniel.garrido_/"><i class="bi bi-instagram fs-5"></i></a>
+            <a class="text-white" target="_blank" href="https://www.facebook.com/DanielGarridotec"><i class="bi bi-facebook fs-5"></i></a>
+            <a class="text-white" target="_blank" href="https://www.tiktok.com/@daniel.garrido_"><i class="bi bi-tiktok fs-5"></i></a>
+            <a class="text-white" target="_blank" href="https://www.behance.net/danielgarrido32"><i class="bi bi-behance fs-5"></i></a>
+            <a class="text-white" target="_blank" href="https://www.linkedin.com/in/daniel-garrido-05138b225/"><i class="bi bi-linkedin fs-5"></i></a>
           </div>
            <p class="pt-4 text-white2">Tu página web no solo debe verse bien, también debe generar confianza y resultados. 
           Te ayudo a crear un sitio moderno, atractivo y responsivo que convierte 
@@ -45,7 +54,8 @@
   <!-- ===== TABS: Servicios / Proyectos ===== -->
   <section id="tabs" class="seccion_tabs py-5 bg-dark">
     <!-- contenedor principal de las card de servicios y proyectos-->
-    <div class=" container bg-dark ">
+    <div class=" container bg-dark">
+      <!-- select del card -->
       <ul class="contenedor-nav nav nav-pills justify-content-center mb-4 " id="pills-tab" role="tablist" data-aos="fade-up">
         <li class="nav-item" role="presentation">
           <button class=" nav-link active" id="pills-servicios-tab" data-bs-toggle="pill" data-bs-target="#pills-servicios" type="button" role="tab">
@@ -59,47 +69,40 @@
         </li>
       </ul>
 
-      <!-- contenedor de las tabs -->
+      <!-- contenido de las tabs -->
       <div class="tab-content" id="pills-tabContent">
         <!-- ===== Tab: Servicios ===== -->
         <div class="tab-pane fade show active" id="pills-servicios" role="tabpanel" aria-labelledby="pills-servicios-tab">
           <div class="row g-4">
-            <!-- Servicio 1 -->
-            <div class="col-md-6 col-lg-3" data-aos="zoom-in-up">
+           
+            <!-- Servicio 1 Landing page-->
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in-up">
               <div class="seccion_servicios_card card h-100 shadow-sm bg-dark">
                 <div class="card-body d-flex flex-column">
-                  <h5 class="mb-2 text-white"><i class="bi bi-lightning-charge me-1"></i>Landing page básica</h5>
-                  <p class="text-white  flex-grow-1">Página enfocada a capturar leads con estructura esencial.</p>
+                  <h5 class="mb-2 text-white"><i class="bi bi-lightning-charge me-1"></i>Landing page</h5>
+                  <p class="text-white  flex-grow-1">Página enfocada a convertir visitantes en clientes potenciales.</p>
                   <button class="btn btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#modalLandingBasica">Ver detalles</button>
                 </div>
               </div>
             </div>
-            <!-- Servicio 2 -->
-            <div class="col-md-6 col-lg-3" data-aos="zoom-in-up" data-aos-delay="50">
+          
+            <!-- Servicio 2 Sitio web -->
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in-up" data-aos-delay="100">
               <div class="seccion_servicios_card card h-100 shadow-sm bg-dark">
                 <div class="card-body d-flex flex-column">
-                  <h5 class="text-white mb-2"><i class="bi bi-rocket me-1"></i>Landing page pro</h5>
-                  <p class="text-white flex-grow-1">Más secciones, optimización de conversión y marketing.</p>
-                  <button class="btn btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#modalLandingPro">Ver detalles</button>
-                </div>
-              </div>
-            </div>
-            <!-- Servicio 3 -->
-            <div class="col-md-6 col-lg-3" data-aos="zoom-in-up" data-aos-delay="100">
-              <div class="seccion_servicios_card card h-100 shadow-sm bg-dark">
-                <div class="card-body d-flex flex-column">
-                  <h5 class="text-white mb-2"><i class="bi bi-window me-1"></i>Sitio web básico</h5>
-                  <p class="text-white flex-grow-1">Sitio web de 3–5 secciones con formulario.</p>
+                  <h5 class="text-white mb-2"><i class="bi bi-window me-1"></i>Sitio web</h5>
+                  <p class="text-white flex-grow-1">Página enfocadda en crear una presencia profesional digital para tu marca .</p>
                   <button class="btn btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#modalSitioBasico">Ver detalles</button>
                 </div>
               </div>
             </div>
-            <!-- Servicio 4 -->
-            <div class="col-md-6 col-lg-3" data-aos="zoom-in-up" data-aos-delay="150">
+
+            <!-- Servicio 3 Sitio web personalizado a la medida -->
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in-up" data-aos-delay="150">
               <div class="seccion_servicios_card card h-100 shadow-sm bg-dark">
                 <div class="card-body d-flex flex-column">
-                  <h5 class="text-white mb-2"><i class="bi bi-stars me-1"></i>Sitio web pro</h5>
-                  <p class="text-white flex-grow-1">Blog/portafolio, SEO mejorado y animaciones de scroll.</p>
+                  <h5 class="text-white mb-2"><i class="bi bi-stars me-1"></i>Servicio Web personalizado</h5>
+                  <p class="text-white flex-grow-1">Creamos tu sitio web 100% personalizado a tu medida</p>
                   <button class="btn btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#modalSitioPro">Ver detalles</button>
                 </div>
               </div>
@@ -110,11 +113,12 @@
         <!-- ===== Tab: Proyectos ===== -->
         <div class="tab-pane fade" id="pills-proyectos" role="tabpanel" aria-labelledby="pills-proyectos-tab">
           <div class="row g-4">
+             <h3 class="text-white text-center p-2">Conoce las soluciones que les he dado a varios de mis clientes</h3>
             <!-- Proyecto 1 -->
             <div class="col-md-6 col-lg-4 " data-aos="fade-up">
-              <a class="text-decoration-none" target="_blank" href="https://escalaurbana.mx/">
+              <a class="text-decoration-none" target="_blank" href="https://daniel-garrido.github.io/Laser-Pro/">
                 <div class="seccion_proyectos_card card border-0 shadow-sm h-100">
-                  <img class="card-img-top" src="https://picsum.photos/seed/escala/800/500" alt="Escala Urbana">
+                  <img class="card-img-top" src="img/PROYECTO1.webp" alt="Escala Urbana">
                   <div class="card-body bg-dark2">
                     <h5 class="text-white card-title mb-1">Laser Pro</h5>
                     <p class="text-white small mb-0">Landing page para una empresa de depilación laser</p>
@@ -124,24 +128,24 @@
             </div>
             <!-- Proyecto 2 -->
             <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
-              <a class="text-decoration-none" target="_blank" href="https://gran-san-diego.example.com/">
+              <a class="text-decoration-none" target="_blank" href="https://gransandiego.com/">
                 <div class="seccion_proyectos_card card border-0 shadow-sm h-100">
-                  <img class="card-img-top" src="https://picsum.photos/seed/gsd/800/500" alt="Gran San Diego Residencial">
+                  <img class="card-img-top" src="img/PROYECTO2.webp" alt="Gran San Diego Residencial">
                   <div class="card-body bg-dark2">
                     <h5 class="text-white card-title mb-1">Gran San Diego Residencial</h5>
-                    <p class="text-white small mb-0">Landing enfocada a conversión</p>
+                    <p class="text-white small mb-0">Landing Page para una residencial de Mérida, Yucatán</p>
                   </div>
                 </div>
               </a>
             </div>
             <!-- Proyecto 3 -->
             <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-              <a class="text-decoration-none" target="_blank" href="https://onebillionclub.example.com/">
+              <a class="text-decoration-none" target="_blank" href="https://daniel-garrido.github.io/LandingPageMersiMakeUp/">
                 <div class="seccion_proyectos_card card border-0 shadow-sm h-100">
-                  <img class="card-img-top" src="https://picsum.photos/seed/1bc/800/500" alt="One Billion Club">
+                  <img class="card-img-top" src="img/PROYECTO3.webp" alt="One Billion Club">
                   <div class="card-body bg-dark2">
-                    <h5 class="text-white card-title mb-1">One Billion Club</h5>
-                    <p class="text-white  small mb-0">Sitio de evento (concepto)</p>
+                    <h5 class="text-white card-title mb-1">Mersi MakeUp</h5>
+                    <p class="text-white  small mb-0">Landing page para una Estética y maquillaje</p>
                   </div>
                 </div>
               </a>
@@ -174,7 +178,10 @@
         </h2>
         <div id="faq1c" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
           <div class="accordion-body text-white2">
-            Diseño responsive, optimización de velocidad básica, SEO on-page inicial, integración con WhatsApp, formulario de contacto y capacitación express para editar contenido esencial.
+            <p>
+                 El servicio depende del plan que elijas, pero generalmente incluye: <br>
+                 Diseño responsive, optimización de velocidad básica, SEO on-page inicial, integración con WhatsApp, formulario de contacto etc
+            </p>
           </div>
         </div>
       </div>
@@ -188,26 +195,15 @@
         </h2>
         <div id="faq2c" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
           <div class="accordion-body text-white2">
-            Una landing suele estar lista en 3–7 días hábiles. Un sitio pro puede tomar 2–4 semanas, considerando revisiones y carga de contenido.
+            <p>
+              El tiempo de desarrollo depende de la cantidad de proyectos en las que nos encontremos, pero por lo general dura entre 15 a 20 días
+              hábiles.
+            </p>
           </div>
         </div>
       </div>
 
       <!-- Pregunta 3 -->
-      <div class="accordion-item bg-dark border-0">
-        <h2 class="accordion-header" id="faq3">
-          <button class="accordion-button collapsed bg-dark text-white fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3c">
-            ¿Qué pasa si no me gusta el diseño?
-          </button>
-        </h2>
-        <div id="faq3c" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-          <div class="accordion-body text-white2">
-            Trabajo con borradores y feedback por etapas. Incluyo hasta dos rondas de ajustes en todos los planes para llegar a un resultado que te encante.
-          </div>
-        </div>
-      </div>
-
-      <!-- Pregunta 4 -->
       <div class="accordion-item bg-dark border-0">
         <h2 class="accordion-header" id="faq4">
           <button class="accordion-button collapsed bg-dark text-white fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq4c">
@@ -221,7 +217,7 @@
         </div>
       </div>
 
-      <!-- Pregunta 5 -->
+      <!-- Pregunta 4 -->
       <div class="accordion-item bg-dark border-0">
         <h2 class="accordion-header" id="faq5">
           <button class="accordion-button collapsed bg-dark text-white fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq5c">
@@ -235,7 +231,7 @@
         </div>
       </div>
 
-      <!-- Pregunta 6 -->
+      <!-- Pregunta 5 -->
       <div class="accordion-item bg-dark border-0">
         <h2 class="accordion-header" id="faq6">
           <button class="accordion-button collapsed bg-dark text-white fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq6c">
@@ -244,26 +240,15 @@
         </h2>
         <div id="faq6c" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
           <div class="accordion-body text-white2">
-            Dependiendo del plan que elijas, puedo gestionar la compra de dominio y hosting por ti, o asesorarte para que los adquieras directamente a tu nombre.
+            <p>
+                Sí, en todos los planes el servicio de Hosting y dominio estan incluidos gratis por un año,
+                después del primer año tienen un costo anual que es opcional pagar con nosotros.
+            </p>
           </div>
         </div>
       </div>
 
-      <!-- Pregunta 7 -->
-      <div class="accordion-item bg-dark border-0">
-        <h2 class="accordion-header" id="faq7">
-          <button class="accordion-button collapsed bg-dark text-white fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq7c">
-            ¿Puedo actualizar yo mismo mi página después?
-          </button>
-        </h2>
-        <div id="faq7c" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-          <div class="accordion-body text-white2">
-            Sí, entrego una capacitación básica para que puedas editar textos, imágenes y secciones principales. Si necesitas cambios avanzados, también ofrezco soporte continuo.
-          </div>
-        </div>
-      </div>
-
-      <!-- Pregunta 8 -->
+      <!-- Pregunta 6 -->
       <div class="accordion-item bg-dark border-0">
         <h2 class="accordion-header" id="faq8">
           <button class="accordion-button collapsed bg-dark text-white fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq8c">
@@ -284,37 +269,54 @@
   <!-- =====SECCION DE FOOTER ===== -->
   <footer class="bg-dark border-top text-muted py-4">
     <div class="container small d-flex flex-column flex-lg-row align-items-center justify-content-between gap-2">
-      <p class="text-light"> &copy;Daniel Garrido - todos los derechos reservados</p>
-      <div class="seccion_header_redes_sociales justify-content-center">
-            <a class="text-white" target="_blank" href="https://www.instagram.com/daniel.garrido_/"><i class="bi bi-instagram fs-4"></i></a>
-            <a class="text-white" target="_blank" href="https://www.facebook.com/DanielGarridotec"><i class="bi bi-facebook fs-4"></i></a>
-            <a class="text-white" target="_blank" href="https://www.tiktok.com/@daniel.garrido_"><i class="bi bi-tiktok fs-4"></i></a>
+  
+      <p class="mb-2 text-center text-white">
+        &copy; <a href="https://daniel-garrido.netlify.app/" class="link-light text-decoration-none">Daniel Garrido :</a> 
+        todos los derechos reservados
+      </p>
+  
+      <div class="seccion_header_redes_sociales d-flex justify-content-center gap-2">
+        <a class="text-white" target="_blank" href="https://www.instagram.com/daniel.garrido_/"><i
+            class="bi bi-instagram fs-5"></i></a>
+        <a class="text-white" target="_blank" href="https://www.facebook.com/DanielGarridotec"><i
+            class="bi bi-facebook fs-5"></i></a>
+        <a class="text-white" target="_blank" href="https://www.tiktok.com/@daniel.garrido_"><i
+            class="bi bi-tiktok fs-5"></i></a>
+        <a class="text-white" target="_blank" href="https://www.behance.net/danielgarrido32"><i
+            class="bi bi-behance fs-5"></i></a>
+        <a class="text-white" target="_blank" href="https://www.linkedin.com/in/daniel-garrido-05138b225/"><i
+            class="bi bi-linkedin fs-5"></i></a>
       </div>
+  
     </div>
   </footer>
 
   <!-- Fixed WhatsApp -->
   <a class="btn btn-success seccion_whatsapp_btn shadow" target="_blank" 
      href="https://wa.me/529881033705?text=Hola%20Daniel,%20quiero%20informaci%C3%B3n%20sobre%20tu%20servicio%20web.">
-     <i class="bi bi-whatsapp"></i>
+      <i class="fa-brands fa-whatsapp"></i>
   </a>
 
   <!-- =====SECCION DE MODALES  ===== -->
-  <!-- Landing Básica -->
+  <!-- Landing page -->
   <div class="modal fade" id="modalLandingBasica" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Landing Page Básica</h5>
+          <h5 class="modal-title">Servicio de landing page</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
         </div>
         <div class="modal-body">
           <ul>
-            <li>Estructura esencial (Hero, Beneficios, CTA, Contacto).</li>
-            <li>Responsive + optimización ligera de velocidad.</li>
-            <li>Formulario de contacto + botón WhatsApp.</li>
-            <li>Implementación de analítica/píxel si lo provees.</li>
-            <li>Entrega en 3–7 días hábiles.</li>
+            <li>1 Año de hosting gratis</li>
+            <li>1 Año de dominio gratis</li>
+            <li>1 Sola página</li>
+            <li>Seo Básico</li>
+            <li>Adaptado a dispositivos Móviles</li>
+            <li>Formulario de contacto</li>
+            <li>Botón de WhatsApp</li>
+            <li>2-3 secciones</li>
+            <li>30 días de soporte gratis</li>
             <li><span class="fw-bold">$3,500.00 MXN</span></li>
           </ul>
         </div>
@@ -325,44 +327,27 @@
     </div>
   </div>
 
-  <!-- Landing Pro -->
-  <div class="modal fade" id="modalLandingPro" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Landing Page Pro</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-        </div>
-        <div class="modal-body">
-          <ul>
-            <li>Todo lo de Básica + secciones extra (Testimonios, FAQs, Portafolio breve).</li>
-            <li>Optimización de conversión (A/B ready, heatmap ready).</li>
-            <li>Integración con email marketing (si aplica).</li>
-            <li>Entrega en 5–10 días hábiles.</li>
-          </ul>
-        </div>
-        <div class="modal-footer d-flex justify-content-center">
-          <a class="btn btn-info" target="_blank" href="https://wa.me/529881033705?text=Quiero%20la%20Landing%20Pro">Solicitar</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Sitio Básico -->
+  <!-- Sitio web-->
   <div class="modal fade" id="modalSitioBasico" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Sitio Web Básico</h5>
+          <h5 class="modal-title">Servicio de sitio web</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
         </div>
         <div class="modal-body">
           <ul>
-            <li>3–5 páginas (Inicio, Nosotros, Servicios, Contacto, etc.).</li>
-            <li>SEO on-page inicial (metatags, headings, performance básica).</li>
-            <li>Blog opcional (estructura) sin contenido.</li>
-            <li>Instalación en hosting y dominio.</li>
+            <li>1 Año de hosting gratis</li>
+            <li>1 Año de dominio gratis</li>
+            <li>2-3 páginas</li>
+            <li>Seo Básico</li>
+            <li>Adaptado a dispositivos Móviles</li>
+            <li>Formulario de contacto</li>
+            <li>4-5 secciones</li>
+            <li>30 días de soporte gratis</li>
+            <li><span class="fw-bold">$5,500.00 MXN</span></li>
           </ul>
+        
         </div>
         <div class="modal-footer d-flex justify-content-center">
           <a class="btn btn-info" target="_blank" href="https://wa.me/529881033705?text=Quiero%20el%20Sitio%20B%C3%A1sico">Solicitar</a>
@@ -371,20 +356,18 @@
     </div>
   </div>
 
-  <!-- Sitio Pro -->
+  <!-- Sitio Personalizado -->
   <div class="modal fade" id="modalSitioPro" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Sitio Web Pro</h5>
+          <h5 class="modal-title">Servicio a tu medida</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
         </div>
         <div class="modal-body">
           <ul>
-            <li>Todo lo del básico + blog/portafolio con filtros.</li>
-            <li>Animaciones scroll (AOS) y micro-interacciones.</li>
-            <li>SEO técnico mejorado y Core Web Vitals optimizado.</li>
-            <li>Integración con CRM/WhatsApp Business si aplica.</li>
+            <li>Sitio web desarrollado a tu medida</li>
+            <li><span class="fw-bold">Bajo cotización</span></li>
           </ul>
         </div>
         <div class="modal-footer d-flex justify-content-center">
@@ -397,6 +380,6 @@
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script src="script.js"></script>
+  <script src="JS/script.js"></script>
 </body>
 </html>

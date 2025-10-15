@@ -1,6 +1,10 @@
 // Init AOS & helpers
 document.addEventListener('DOMContentLoaded', () => {
-  AOS.init({ once: true, duration: 700, easing: 'ease-out-cubic' });
+  AOS.init({
+     once: true, 
+     duration: 800, 
+     easing: 'ease-out-cubic' 
+    });
   // Scrollspy refresh
   setTimeout(() => {
     const scrollSpy = new bootstrap.ScrollSpy(document.body, {
@@ -9,7 +13,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, 400);
 
-  // Footer year
-  const y = document.getElementById('year');
-  if (y) y.textContent = new Date().getFullYear();
 });
