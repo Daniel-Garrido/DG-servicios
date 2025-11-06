@@ -1,0 +1,67 @@
+/* ===== MODO CLARO ===== */
+.light-mode {
+  background-color: white !important;
+  color: #212529 !important;
+}
+
+.light-mode .bg-dark,
+.light-mode .bg-dark2 {
+  background-color: #ffffff !important;
+}
+
+.light-mode .text-white,
+.light-mode .text-white2 {
+  color: #212529 !important;
+}
+
+.light-mode .card {
+  background-color: #ffffff !important;
+  border-color: #dee2e6 !important;
+}
+
+.light-mode .contenedor-nav{
+    background-color: white !important;
+    border-radius: 10px;
+}
+
+/* estilo al menu de los tabs */
+.light-mode .seccion_tabs .nav-pills .nav-link {
+  color: #272729;
+  background-color: white;
+  border: 1px solid #c2c2c2;
+}
+
+.light-mode .seccion_tabs .nav-pills .nav-link.active {
+   background-color: #c2c2c2;
+}
+
+
+.light-mode .seccion_header_redes_sociales a{
+    color: white !important;
+     background-color:  #c2c2c2 !important;
+}
+
+.light-mode .links-redes-sociales{
+    border: 1px solid #c2c2c2;
+}
+.light-mode .small{
+     color: #212529 !important;
+}
+.light-mode .accordion-button {
+  background-color: #ffffff !important;
+  color: #212529 !important;
+  border-bottom: 1px solid #dee2e6 !important;
+}
+
+.light-mode .accordion-button::after {
+  filter: invert(0);
+}
+
+.light-mode footer {
+  background-color: #f8f9fa !important;
+}
+
+.light-mode .btn-outline-light {
+  border-color: #212529;
+  color: #212529;
+}

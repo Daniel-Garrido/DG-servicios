@@ -1,0 +1,20 @@
+@media (max-width: 800px) {
+  
+  /* ===== Seccion de Tabs ===== */
+  .seccion_tabs .nav-pills .nav-link {
+    padding: 10px 30px;
+  }
+}
+
+
+@media (max-width: 500px) {
+ 
+  /* ===== Seccion de Tabs ===== */
+  .contenedor-nav {
+    gap: 5px;
+  }
+
+  .seccion_tabs .nav-pills .nav-link {
+    padding: 10px 15px;
+  }
+}

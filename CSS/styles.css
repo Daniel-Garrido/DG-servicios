@@ -51,7 +51,7 @@ body{
 .seccion_tabs .nav-pills .nav-link {
   padding: 10px 50px;
   color: white;
-  background-color: #3B3C40;
+  background-color: #403c3b;
   border: 1px solid #3B3C40;
 }
 
@@ -130,42 +130,3 @@ body{
 
 
 
-/* ===== MODO CLARO ===== */
-.light-mode {
-  background-color: #f8f9fa !important;
-  color: #212529 !important;
-}
-
-.light-mode .bg-dark,
-.light-mode .bg-dark2 {
-  background-color: #ffffff !important;
-}
-
-.light-mode .text-white,
-.light-mode .text-white2 {
-  color: #212529 !important;
-}
-
-.light-mode .card {
-  background-color: #ffffff !important;
-  border-color: #dee2e6 !important;
-}
-
-.light-mode .accordion-button {
-  background-color: #ffffff !important;
-  color: #212529 !important;
-  border-bottom: 1px solid #dee2e6 !important;
-}
-
-.light-mode .accordion-button::after {
-  filter: invert(0);
-}
-
-.light-mode footer {
-  background-color: #f8f9fa !important;
-}
-
-.light-mode .btn-outline-light {
-  border-color: #212529;
-  color: #212529;
-}

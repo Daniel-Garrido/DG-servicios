@@ -7,6 +7,7 @@
   <title>DG</title>
   <meta name="description"
     content="Servicios de desarrollo y diseño web. Portafolio de proyectos, preguntas frecuentes y contacto directo por WhatsApp." />
+
   <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- AOS -->
@@ -25,6 +26,8 @@
 
   <!-- CSS Local -->
   <link href="CSS/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/mododark.css">
+  <link rel="stylesheet" href="CSS/responsive.css">
   <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
 
@@ -35,13 +38,13 @@
     <i class="bi bi-sun-fill"></i>
   </button>
 
-  <!-- Fixed WhatsApp -->
+  <!-- Boton para contactar al WhatsApp -->
   <a class="btn btn-success seccion_whatsapp_btn shadow" target="_blank"
     href="https://wa.me/529881033705?text=Hola%20Daniel,%20quiero%20informaci%C3%B3n%20sobre%20tu%20servicio%20web.">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
 
-  
+
   <!-- =====SECCION DE HEADER ===== -->
   <header id="header" class="seccion_header bg-dark pt-4">
     <div class="container bg-dark mt-4">
@@ -74,120 +77,213 @@
     </div>
   </header>
 
-  <!-- ===== TABS: Servicios / Proyectos ===== -->
-  <section id="tabs" class="seccion_tabs py-5 bg-dark">
-    <!-- contenedor principal de las card de servicios y proyectos-->
-    <div class=" container bg-dark">
-      <!-- select del card -->
-      <ul class="contenedor-nav nav nav-pills justify-content-center mb-4 " id="pills-tab" role="tablist"
-        data-aos="fade-up">
-        <li class="nav-item" role="presentation">
-          <button class=" nav-link active" id="pills-servicios-tab" data-bs-toggle="pill"
-            data-bs-target="#pills-servicios" type="button" role="tab">
-            Servicios
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-proyectos-tab" data-bs-toggle="pill" data-bs-target="#pills-proyectos"
-            type="button" role="tab">
-            Proyectos
-          </button>
-        </li>
-      </ul>
+  <!-- ===== Seccion de tabs ===== -->
+  <!-- ===== Sección de Tabs ===== -->
+<section id="tabs" class="seccion_tabs py-5 bg-dark">
+  <div class="container bg-dark">
 
-      <!-- contenido de las tabs -->
-      <div class="tab-content" id="pills-tabContent">
-        <!-- ===== Tab: Servicios ===== -->
-        <div class="tab-pane fade show active" id="pills-servicios" role="tabpanel"
-          aria-labelledby="pills-servicios-tab">
-          <div class="row g-4">
+    <!-- ===== NAV (Botones de Tabs) ===== -->
+    <ul class="contenedor-nav nav nav-pills justify-content-center mb-4" id="pills-tab" role="tablist" data-aos="fade-up">
+      <!-- Enlaces -->
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-enlaces-tab" data-bs-toggle="pill" data-bs-target="#pills-enlaces" type="button" role="tab">
+          Enlaces
+        </button>
+      </li>
 
-            <!-- Servicio 1 Landing page-->
-            <div class="col-md-6 col-lg-4" data-aos="zoom-in-up">
-              <div class="seccion_servicios_card card h-100 shadow-sm bg-dark">
-                <div class="card-body d-flex flex-column">
-                  <h5 class="mb-2 text-white"><i class="bi bi-lightning-charge me-1"></i>Landing page</h5>
-                  <p class="text-white  flex-grow-1">Página enfocada a convertir visitantes en clientes potenciales.</p>
-                  <button class="btn btn-outline-info mt-2" data-bs-toggle="modal"
-                    data-bs-target="#modalLandingBasica">Ver detalles</button>
+      <!-- Servicios -->
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-servicios-tab" data-bs-toggle="pill" data-bs-target="#pills-servicios" type="button" role="tab">
+          Servicios
+        </button>
+      </li>
+
+      <!-- Proyectos -->
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-proyectos-tab" data-bs-toggle="pill" data-bs-target="#pills-proyectos" type="button" role="tab">
+          Proyectos
+        </button>
+      </li>
+    </ul>
+
+    <!-- ===== CONTENIDO DE LOS TABS ===== -->
+    <div class="tab-content" id="pills-tabContent">
+
+      <!-- ===== TAB: Enlaces ===== -->
+      <div class="tab-pane fade show active" id="pills-enlaces" role="tabpanel" aria-labelledby="pills-enlaces-tab">
+        <div class="container">
+          <div class="row justify-content-center">
+
+            <!-- Instagram -->
+            <div class="links-redes-sociales col-md-10 bg-dark2 p-4 g-4 rounded-3 mb-3">
+              <a href="https://www.instagram.com/daniel.garrido_/" target="_blank" class="d-flex align-items-center text-decoration-none">
+                <div class="flex-shrink-0 me-3 d-flex justify-content-center align-items-center rounded-circle">
+                  <i class="bi bi-instagram text-white fs-1"></i>
                 </div>
-              </div>
+                <div class="text-start">
+                  <h3 class="mb-2 text-white fw-bold">Instagram</h3>
+                  <small class="text-white-50 fs-6">Acá comparto mis proyectos y mi día a día como programador y diseñador</small>
+                </div>
+              </a>
             </div>
 
-            <!-- Servicio 2 Sitio web -->
-            <div class="col-md-6 col-lg-4" data-aos="zoom-in-up" data-aos-delay="100">
-              <div class="seccion_servicios_card card h-100 shadow-sm bg-dark">
-                <div class="card-body d-flex flex-column">
-                  <h5 class="text-white mb-2"><i class="bi bi-window me-1"></i>Sitio web</h5>
-                  <p class="text-white flex-grow-1">Página enfocadda en crear una presencia profesional digital para tu
-                    marca .</p>
-                  <button class="btn btn-outline-info mt-2" data-bs-toggle="modal"
-                    data-bs-target="#modalSitioBasico">Ver detalles</button>
+            <!-- Facebook -->
+            <div class="links-redes-sociales col-md-10 bg-dark2 p-4 g-4 rounded-3 mb-3">
+              <a href="https://www.facebook.com/DanielGarridotec" target="_blank" class="d-flex align-items-center text-decoration-none">
+                <div class="flex-shrink-0 me-3 d-flex justify-content-center align-items-center rounded-circle">
+                  <i class="bi bi-facebook text-white fs-1"></i>
                 </div>
-              </div>
+                <div class="text-start">
+                  <h3 class="mb-2 text-white fw-bold">Facebook</h3>
+                  <small class="text-white-50 fs-6">Post y videos relacionados al mundo de la programación y diseño</small>
+                </div>
+              </a>
             </div>
 
-            <!-- Servicio 3 Sitio web personalizado a la medida -->
-            <div class="col-md-6 col-lg-4" data-aos="zoom-in-up" data-aos-delay="150">
-              <div class="seccion_servicios_card card h-100 shadow-sm bg-dark">
-                <div class="card-body d-flex flex-column">
-                  <h5 class="text-white mb-2"><i class="bi bi-stars me-1"></i>Servicio Web personalizado</h5>
-                  <p class="text-white flex-grow-1">Creamos tu sitio web 100% personalizado a tu medida</p>
-                  <button class="btn btn-outline-info mt-2" data-bs-toggle="modal"
-                    data-bs-target="#modalSitioPro">Ver detalles</button>
+            <!-- TikTok -->
+            <div class="links-redes-sociales col-md-10 bg-dark2 p-4 g-4 rounded-3 mb-3">
+              <a href="https://www.tiktok.com/@daniel.garrido_" target="_blank" class="d-flex align-items-center text-decoration-none">
+                <div class="flex-shrink-0 me-3 d-flex justify-content-center align-items-center rounded-circle">
+                  <i class="bi bi-tiktok text-white fs-1"></i>
                 </div>
+                <div class="text-start">
+                  <h3 class="mb-2 text-white fw-bold">TikTok</h3>
+                  <small class="text-white-50 fs-6">Videos de programación, ingeniería, diseño web y todo lo relacionado al mundo tech</small>
+                </div>
+              </a>
+            </div>
+
+            <!-- Behance -->
+            <div class="links-redes-sociales col-md-10 bg-dark2 p-4 g-4 rounded-3 mb-3">
+              <a href="https://www.behance.net/danielgarrido32" target="_blank" class="d-flex align-items-center text-decoration-none">
+                <div class="flex-shrink-0 me-3 d-flex justify-content-center align-items-center rounded-circle">
+                  <i class="bi bi-behance text-white fs-1"></i>
+                </div>
+                <div class="text-start">
+                  <h3 class="mb-2 text-white fw-bold">Behance</h3>
+                  <small class="text-white-50 fs-6">Te comparto mis proyectos de diseño en los que he trabajado</small>
+                </div>
+              </a>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="links-redes-sociales col-md-10 bg-dark2 p-4 g-4 rounded-3 mb-3">
+              <a href="https://www.linkedin.com/in/daniel-garrido-05138b225/" target="_blank" class="d-flex align-items-center text-decoration-none">
+                <div class="flex-shrink-0 me-3 d-flex justify-content-center align-items-center rounded-circle">
+                  <i class="bi bi-linkedin text-white fs-1"></i>
+                </div>
+                <div class="text-start">
+                  <h3 class="mb-2 text-white fw-bold">LinkedIn</h3>
+                  <small class="text-white-50 fs-6">Conectemos en esta red profesional</small>
+                </div>
+              </a>
+            </div>
+
+            <!-- Sitio Web -->
+            <div class="links-redes-sociales col-md-10 bg-dark2 p-4 g-4 rounded-3">
+              <a href="https://daniel-garrido.netlify.app/Portafolio/" target="_blank" class="d-flex align-items-center text-decoration-none">
+                <div class="flex-shrink-0 me-3 d-flex justify-content-center align-items-center rounded-circle">
+                  <i class="bi bi-globe text-white fs-1"></i>
+                </div>
+                <div class="text-start">
+                  <h3 class="mb-2 text-white fw-bold">Sitio Web</h3>
+                  <small class="text-white-50 fs-6">Conoce más acerca de mis proyectos y desarrollo</small>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== TAB: Servicios ===== -->
+      <div class="tab-pane fade" id="pills-servicios" role="tabpanel" aria-labelledby="pills-servicios-tab">
+        <div class="row g-4">
+          <!-- Servicio 1 -->
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in-up">
+            <div class="seccion_servicios_card card h-100 shadow-sm bg-dark">
+              <div class="card-body d-flex flex-column">
+                <h5 class="mb-2 text-white"><i class="bi bi-lightning-charge me-1"></i>Landing page</h5>
+                <p class="text-white flex-grow-1">Página enfocada a convertir visitantes en clientes potenciales.</p>
+                <button class="btn btn-outline-info mt-2" data-bs-toggle="modal" data-bs-target="#modalLandingBasica">Ver detalles</button>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- ===== Tab: Proyectos ===== -->
-        <div class="tab-pane fade" id="pills-proyectos" role="tabpanel" aria-labelledby="pills-proyectos-tab">
-          <div class="row g-4">
-            <h3 class="text-white text-center p-2">Conoce las soluciones que les he dado a varios de mis clientes</h3>
-            <!-- Proyecto 1 -->
-            <div class="col-md-6 col-lg-4 " data-aos="fade-up">
-              <a class="text-decoration-none" target="_blank" href="https://daniel-garrido.github.io/Laser-Pro/">
-                <div class="seccion_proyectos_card card border-0 shadow-sm h-100">
-                  <img class="card-img-top" src="img/PROYECTO1.webp" alt="Escala Urbana">
-                  <div class="card-body bg-dark2">
-                    <h5 class="text-white card-title mb-1">Laser Pro</h5>
-                    <p class="text-white small mb-0">Landing page para una empresa de depilación laser</p>
-                  </div>
-                </div>
-              </a>
+          <!-- Servicio 2 -->
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in-up" data-aos-delay="100">
+            <div class="seccion_servicios_card card h-100 shadow-sm bg-dark">
+              <div class="card-body d-flex flex-column">
+                <h5 class="text-white mb-2"><i class="bi bi-window me-1"></i>Sitio web</h5>
+                <p class="text-white flex-grow-1">Página enfocada en crear una presencia profesional digital para tu marca.</p>
+                <button class="btn btn-outline-info mt-2" data-bs-toggle="modal" data-bs-target="#modalSitioBasico">Ver detalles</button>
+              </div>
             </div>
-            <!-- Proyecto 2 -->
-            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
-              <a class="text-decoration-none" target="_blank" href="https://gransandiego.com/">
-                <div class="seccion_proyectos_card card border-0 shadow-sm h-100">
-                  <img class="card-img-top" src="img/PROYECTO2.webp" alt="Gran San Diego Residencial">
-                  <div class="card-body bg-dark2">
-                    <h5 class="text-white card-title mb-1">Gran San Diego Residencial</h5>
-                    <p class="text-white small mb-0">Landing Page para una residencial de Mérida, Yucatán</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!-- Proyecto 3 -->
-            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-              <a class="text-decoration-none" target="_blank"
-                href="https://daniel-garrido.github.io/LandingPageMersiMakeUp/">
-                <div class="seccion_proyectos_card card border-0 shadow-sm h-100">
-                  <img class="card-img-top" src="img/PROYECTO3.webp" alt="One Billion Club">
-                  <div class="card-body bg-dark2">
-                    <h5 class="text-white card-title mb-1">Mersi MakeUp</h5>
-                    <p class="text-white  small mb-0">Landing page para una Estética y maquillaje</p>
-                  </div>
-                </div>
-              </a>
+          </div>
+
+          <!-- Servicio 3 -->
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in-up" data-aos-delay="150">
+            <div class="seccion_servicios_card card h-100 shadow-sm bg-dark">
+              <div class="card-body d-flex flex-column">
+                <h5 class="text-white mb-2"><i class="bi bi-stars me-1"></i>Servicio Web personalizado</h5>
+                <p class="text-white flex-grow-1">Creamos tu sitio web 100% personalizado a tu medida.</p>
+                <button class="btn btn-outline-info mt-2" data-bs-toggle="modal" data-bs-target="#modalSitioPro">Ver detalles</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-    </div>
-  </section>
+      <!-- ===== TAB: Proyectos ===== -->
+      <div class="tab-pane fade" id="pills-proyectos" role="tabpanel" aria-labelledby="pills-proyectos-tab">
+        <div class="row g-4">
+          <h3 class="text-white text-center p-2">Conoce las soluciones que les he dado a varios de mis clientes</h3>
+
+          <!-- Proyecto 1 -->
+          <div class="col-md-6 col-lg-4" data-aos="fade-up">
+            <a class="text-decoration-none" target="_blank" href="https://daniel-garrido.github.io/Laser-Pro/">
+              <div class="seccion_proyectos_card card border-0 shadow-sm h-100">
+                <img class="card-img-top" src="img/PROYECTO1.webp" alt="Laser Pro">
+                <div class="card-body bg-dark2">
+                  <h5 class="text-white card-title mb-1">Laser Pro</h5>
+                  <p class="text-white small mb-0">Landing page para una empresa de depilación láser.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Proyecto 2 -->
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
+            <a class="text-decoration-none" target="_blank" href="https://gransandiego.com/">
+              <div class="seccion_proyectos_card card border-0 shadow-sm h-100">
+                <img class="card-img-top" src="img/PROYECTO2.webp" alt="Gran San Diego Residencial">
+                <div class="card-body bg-dark2">
+                  <h5 class="text-white card-title mb-1">Gran San Diego Residencial</h5>
+                  <p class="text-white small mb-0">Landing Page para una residencial de Mérida, Yucatán.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Proyecto 3 -->
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <a class="text-decoration-none" target="_blank" href="https://daniel-garrido.github.io/LandingPageMersiMakeUp/">
+              <div class="seccion_proyectos_card card border-0 shadow-sm h-100">
+                <img class="card-img-top" src="img/PROYECTO3.webp" alt="Mersi MakeUp">
+                <div class="card-body bg-dark2">
+                  <h5 class="text-white card-title mb-1">Mersi MakeUp</h5>
+                  <p class="text-white small mb-0">Landing page para una estética y maquillaje.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- 🔸 FIN DEL .tab-content -->
+  </div>
+</section>
+
 
   <!-- ===== SECCION DE PREGUNTAS FRECUENTES ===== -->
   <section id="faq" class="seccion_faq py-5 bg-dark text-white">
@@ -335,7 +431,7 @@
     </div>
   </footer>
 
-  
+
   <!-- =====SECCION DE MODALES  ===== -->
   <!-- Landing page -->
   <div class="modal fade" id="modalLandingBasica" tabindex="-1" aria-hidden="true">
