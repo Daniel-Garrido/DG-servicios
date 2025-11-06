@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>DG</title>
-  <meta name="description" content="Servicios de desarrollo y diseño web. Portafolio de proyectos, preguntas frecuentes y contacto directo por WhatsApp." />
+  <meta name="description"
+    content="Servicios de desarrollo y diseño web. Portafolio de proyectos, preguntas frecuentes y contacto directo por WhatsApp." />
   <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- AOS -->
@@ -13,17 +15,32 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <!-- Libreria FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  
+
   <!-- Libreria google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
   <!-- CSS Local -->
   <link href="CSS/styles.css" rel="stylesheet">
   <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
+
 <body data-bs-spy="scroll">
+
+  <!-- Botón modo oscuro / claro -->
+  <button id="themeToggle" class="btn btn-outline-light position-fixed top-0 end-0 m-3">
+    <i class="bi bi-sun-fill"></i>
+  </button>
+
+  <!-- Fixed WhatsApp -->
+  <a class="btn btn-success seccion_whatsapp_btn shadow" target="_blank"
+    href="https://wa.me/529881033705?text=Hola%20Daniel,%20quiero%20informaci%C3%B3n%20sobre%20tu%20servicio%20web.">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
   
   <!-- =====SECCION DE HEADER ===== -->
   <header id="header" class="seccion_header bg-dark pt-4">
@@ -31,21 +48,27 @@
       <div class="row justify-content-center ">
 
         <div class="col-lg-8 text-center" data-aos="fade-up">
-          <img src="img/FOTO-HEADER.webp"  class="seccion_header_avatar mb-3" />
+          <img src="img/FOTO-HEADER.webp" class="seccion_header_avatar mb-3" />
           <h1 class="text-white">Daniel Garrido</h1>
           <p class="text-light">Desarrollador Web</p>
-         
+
           <!-- contenedor de las redes sociales -->
           <div class="seccion_header_redes_sociales d-flex justify-content-center gap-2">
-            <a class="text-white" target="_blank" href="https://www.instagram.com/daniel.garrido_/"><i class="bi bi-instagram fs-5"></i></a>
-            <a class="text-white" target="_blank" href="https://www.facebook.com/DanielGarridotec"><i class="bi bi-facebook fs-5"></i></a>
-            <a class="text-white" target="_blank" href="https://www.tiktok.com/@daniel.garrido_"><i class="bi bi-tiktok fs-5"></i></a>
-            <a class="text-white" target="_blank" href="https://www.behance.net/danielgarrido32"><i class="bi bi-behance fs-5"></i></a>
-            <a class="text-white" target="_blank" href="https://www.linkedin.com/in/daniel-garrido-05138b225/"><i class="bi bi-linkedin fs-5"></i></a>
+            <a class="text-white" target="_blank" href="https://www.instagram.com/daniel.garrido_/"><i
+                class="bi bi-instagram fs-5"></i></a>
+            <a class="text-white" target="_blank" href="https://www.facebook.com/DanielGarridotec"><i
+                class="bi bi-facebook fs-5"></i></a>
+            <a class="text-white" target="_blank" href="https://www.tiktok.com/@daniel.garrido_"><i
+                class="bi bi-tiktok fs-5"></i></a>
+            <a class="text-white" target="_blank" href="https://www.behance.net/danielgarrido32"><i
+                class="bi bi-behance fs-5"></i></a>
+            <a class="text-white" target="_blank" href="https://www.linkedin.com/in/daniel-garrido-05138b225/"><i
+                class="bi bi-linkedin fs-5"></i></a>
           </div>
-           <p class="pt-4 text-white2">Tu página web no solo debe verse bien, también debe generar confianza y resultados. 
-          Te ayudo a crear un sitio moderno, atractivo y responsivo que convierte 
-          visitantes en clientes satisfechos.</p>
+          <p class="pt-4 text-white2">Tu página web no solo debe verse bien, también debe generar confianza y
+            resultados.
+            Te ayudo a crear un sitio moderno, atractivo y responsivo que convierte
+            visitantes en clientes satisfechos.</p>
         </div>
       </div>
     </div>
@@ -56,14 +79,17 @@
     <!-- contenedor principal de las card de servicios y proyectos-->
     <div class=" container bg-dark">
       <!-- select del card -->
-      <ul class="contenedor-nav nav nav-pills justify-content-center mb-4 " id="pills-tab" role="tablist" data-aos="fade-up">
+      <ul class="contenedor-nav nav nav-pills justify-content-center mb-4 " id="pills-tab" role="tablist"
+        data-aos="fade-up">
         <li class="nav-item" role="presentation">
-          <button class=" nav-link active" id="pills-servicios-tab" data-bs-toggle="pill" data-bs-target="#pills-servicios" type="button" role="tab">
+          <button class=" nav-link active" id="pills-servicios-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-servicios" type="button" role="tab">
             Servicios
           </button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-proyectos-tab" data-bs-toggle="pill" data-bs-target="#pills-proyectos" type="button" role="tab">
+          <button class="nav-link" id="pills-proyectos-tab" data-bs-toggle="pill" data-bs-target="#pills-proyectos"
+            type="button" role="tab">
             Proyectos
           </button>
         </li>
@@ -72,27 +98,31 @@
       <!-- contenido de las tabs -->
       <div class="tab-content" id="pills-tabContent">
         <!-- ===== Tab: Servicios ===== -->
-        <div class="tab-pane fade show active" id="pills-servicios" role="tabpanel" aria-labelledby="pills-servicios-tab">
+        <div class="tab-pane fade show active" id="pills-servicios" role="tabpanel"
+          aria-labelledby="pills-servicios-tab">
           <div class="row g-4">
-           
+
             <!-- Servicio 1 Landing page-->
             <div class="col-md-6 col-lg-4" data-aos="zoom-in-up">
               <div class="seccion_servicios_card card h-100 shadow-sm bg-dark">
                 <div class="card-body d-flex flex-column">
                   <h5 class="mb-2 text-white"><i class="bi bi-lightning-charge me-1"></i>Landing page</h5>
                   <p class="text-white  flex-grow-1">Página enfocada a convertir visitantes en clientes potenciales.</p>
-                  <button class="btn btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#modalLandingBasica">Ver detalles</button>
+                  <button class="btn btn-outline-info mt-2" data-bs-toggle="modal"
+                    data-bs-target="#modalLandingBasica">Ver detalles</button>
                 </div>
               </div>
             </div>
-          
+
             <!-- Servicio 2 Sitio web -->
             <div class="col-md-6 col-lg-4" data-aos="zoom-in-up" data-aos-delay="100">
               <div class="seccion_servicios_card card h-100 shadow-sm bg-dark">
                 <div class="card-body d-flex flex-column">
                   <h5 class="text-white mb-2"><i class="bi bi-window me-1"></i>Sitio web</h5>
-                  <p class="text-white flex-grow-1">Página enfocadda en crear una presencia profesional digital para tu marca .</p>
-                  <button class="btn btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#modalSitioBasico">Ver detalles</button>
+                  <p class="text-white flex-grow-1">Página enfocadda en crear una presencia profesional digital para tu
+                    marca .</p>
+                  <button class="btn btn-outline-info mt-2" data-bs-toggle="modal"
+                    data-bs-target="#modalSitioBasico">Ver detalles</button>
                 </div>
               </div>
             </div>
@@ -103,7 +133,8 @@
                 <div class="card-body d-flex flex-column">
                   <h5 class="text-white mb-2"><i class="bi bi-stars me-1"></i>Servicio Web personalizado</h5>
                   <p class="text-white flex-grow-1">Creamos tu sitio web 100% personalizado a tu medida</p>
-                  <button class="btn btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#modalSitioPro">Ver detalles</button>
+                  <button class="btn btn-outline-info mt-2" data-bs-toggle="modal"
+                    data-bs-target="#modalSitioPro">Ver detalles</button>
                 </div>
               </div>
             </div>
@@ -113,7 +144,7 @@
         <!-- ===== Tab: Proyectos ===== -->
         <div class="tab-pane fade" id="pills-proyectos" role="tabpanel" aria-labelledby="pills-proyectos-tab">
           <div class="row g-4">
-             <h3 class="text-white text-center p-2">Conoce las soluciones que les he dado a varios de mis clientes</h3>
+            <h3 class="text-white text-center p-2">Conoce las soluciones que les he dado a varios de mis clientes</h3>
             <!-- Proyecto 1 -->
             <div class="col-md-6 col-lg-4 " data-aos="fade-up">
               <a class="text-decoration-none" target="_blank" href="https://daniel-garrido.github.io/Laser-Pro/">
@@ -140,7 +171,8 @@
             </div>
             <!-- Proyecto 3 -->
             <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-              <a class="text-decoration-none" target="_blank" href="https://daniel-garrido.github.io/LandingPageMersiMakeUp/">
+              <a class="text-decoration-none" target="_blank"
+                href="https://daniel-garrido.github.io/LandingPageMersiMakeUp/">
                 <div class="seccion_proyectos_card card border-0 shadow-sm h-100">
                   <img class="card-img-top" src="img/PROYECTO3.webp" alt="One Billion Club">
                   <div class="card-body bg-dark2">
@@ -149,7 +181,7 @@
                   </div>
                 </div>
               </a>
-            </div>  
+            </div>
           </div>
         </div>
       </div>
@@ -159,122 +191,134 @@
 
   <!-- ===== SECCION DE PREGUNTAS FRECUENTES ===== -->
   <section id="faq" class="seccion_faq py-5 bg-dark text-white">
-  <div class="container">
-    <!-- Titulo -->
-    <div class="text-center mb-5" data-aos="fade-up">
-      <h2 class="fw-bold">Preguntas frecuentes</h2>
-      <p class="text-white2">Lo más consultado por mis clientes.</p>
-    </div>
-
-    <!-- Acordeón -->
-    <div class="accordion accordion-flush" id="faqAccordion" data-aos="fade-up" data-aos-delay="50">
-      
-      <!-- Pregunta 1 -->
-      <div class="accordion-item bg-dark border-0">
-        <h2 class="accordion-header" id="faq1">
-          <button class="accordion-button bg-dark text-white fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1c">
-            ¿Qué incluye el servicio de desarrollo de páginas web?
-          </button>
-        </h2>
-        <div id="faq1c" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-          <div class="accordion-body text-white2">
-            <p>
-                 El servicio depende del plan que elijas, pero generalmente incluye: <br>
-                 Diseño responsive, optimización de velocidad básica, SEO on-page inicial, integración con WhatsApp, formulario de contacto etc
-            </p>
-          </div>
-        </div>
+    <div class="container">
+      <!-- Titulo -->
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2 class="fw-bold">Preguntas frecuentes</h2>
+        <p class="text-white2">Lo más consultado por mis clientes.</p>
       </div>
 
-      <!-- Pregunta 2 -->
-      <div class="accordion-item bg-dark border-0">
-        <h2 class="accordion-header" id="faq2">
-          <button class="accordion-button collapsed bg-dark text-white fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2c">
-            ¿Cuánto tiempo toma el desarrollo?
-          </button>
-        </h2>
-        <div id="faq2c" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-          <div class="accordion-body text-white2">
-            <p>
-              El tiempo de desarrollo depende de la cantidad de proyectos en las que nos encontremos, pero por lo general dura entre 15 a 20 días
-              hábiles.
-            </p>
+      <!-- Acordeón -->
+      <div class="accordion accordion-flush" id="faqAccordion" data-aos="fade-up" data-aos-delay="50">
+
+        <!-- Pregunta 1 -->
+        <div class="accordion-item bg-dark border-0">
+          <h2 class="accordion-header" id="faq1">
+            <button class="accordion-button bg-dark text-white fw-bold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq1c">
+              ¿Qué incluye el servicio de desarrollo de páginas web?
+            </button>
+          </h2>
+          <div id="faq1c" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body text-white2">
+              <p>
+                El servicio depende del plan que elijas, pero generalmente incluye: <br>
+                Diseño responsive, optimización de velocidad básica, SEO on-page inicial, integración con WhatsApp,
+                formulario de contacto etc
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Pregunta 3 -->
-      <div class="accordion-item bg-dark border-0">
-        <h2 class="accordion-header" id="faq4">
-          <button class="accordion-button collapsed bg-dark text-white fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq4c">
-            ¿Qué es un hosting y por qué lo necesito?
-          </button>
-        </h2>
-        <div id="faq4c" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-          <div class="accordion-body text-white2">
-            El hosting es el servicio donde se almacenan los archivos de tu página web para que esté disponible en internet 24/7. Sin hosting, tu sitio no puede estar en línea.
+        <!-- Pregunta 2 -->
+        <div class="accordion-item bg-dark border-0">
+          <h2 class="accordion-header" id="faq2">
+            <button class="accordion-button collapsed bg-dark text-white fw-bold" type="button"
+              data-bs-toggle="collapse" data-bs-target="#faq2c">
+              ¿Cuánto tiempo toma el desarrollo?
+            </button>
+          </h2>
+          <div id="faq2c" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body text-white2">
+              <p>
+                El tiempo de desarrollo depende de la cantidad de proyectos en las que nos encontremos, pero por lo
+                general dura entre 15 a 20 días
+                hábiles.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Pregunta 4 -->
-      <div class="accordion-item bg-dark border-0">
-        <h2 class="accordion-header" id="faq5">
-          <button class="accordion-button collapsed bg-dark text-white fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq5c">
-            ¿Qué es un dominio?
-          </button>
-        </h2>
-        <div id="faq5c" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-          <div class="accordion-body text-white2">
-            El dominio es la dirección única de tu página en internet (por ejemplo: www.tunegocio.com). Es lo que las personas escriben en su navegador para encontrar tu sitio.
+        <!-- Pregunta 3 -->
+        <div class="accordion-item bg-dark border-0">
+          <h2 class="accordion-header" id="faq4">
+            <button class="accordion-button collapsed bg-dark text-white fw-bold" type="button"
+              data-bs-toggle="collapse" data-bs-target="#faq4c">
+              ¿Qué es un hosting y por qué lo necesito?
+            </button>
+          </h2>
+          <div id="faq4c" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body text-white2">
+              El hosting es el servicio donde se almacenan los archivos de tu página web para que esté disponible en
+              internet 24/7. Sin hosting, tu sitio no puede estar en línea.
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Pregunta 5 -->
-      <div class="accordion-item bg-dark border-0">
-        <h2 class="accordion-header" id="faq6">
-          <button class="accordion-button collapsed bg-dark text-white fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq6c">
-            ¿El dominio y el hosting están incluidos?
-          </button>
-        </h2>
-        <div id="faq6c" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-          <div class="accordion-body text-white2">
-            <p>
+        <!-- Pregunta 4 -->
+        <div class="accordion-item bg-dark border-0">
+          <h2 class="accordion-header" id="faq5">
+            <button class="accordion-button collapsed bg-dark text-white fw-bold" type="button"
+              data-bs-toggle="collapse" data-bs-target="#faq5c">
+              ¿Qué es un dominio?
+            </button>
+          </h2>
+          <div id="faq5c" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body text-white2">
+              El dominio es la dirección única de tu página en internet (por ejemplo: www.tunegocio.com). Es lo que las
+              personas escriben en su navegador para encontrar tu sitio.
+            </div>
+          </div>
+        </div>
+
+        <!-- Pregunta 5 -->
+        <div class="accordion-item bg-dark border-0">
+          <h2 class="accordion-header" id="faq6">
+            <button class="accordion-button collapsed bg-dark text-white fw-bold" type="button"
+              data-bs-toggle="collapse" data-bs-target="#faq6c">
+              ¿El dominio y el hosting están incluidos?
+            </button>
+          </h2>
+          <div id="faq6c" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body text-white2">
+              <p>
                 Sí, en todos los planes el servicio de Hosting y dominio estan incluidos gratis por un año,
                 después del primer año tienen un costo anual que es opcional pagar con nosotros.
-            </p>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Pregunta 6 -->
-      <div class="accordion-item bg-dark border-0">
-        <h2 class="accordion-header" id="faq8">
-          <button class="accordion-button collapsed bg-dark text-white fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq8c">
-            ¿Qué necesito antes de comenzar mi página web?
-          </button>
-        </h2>
-        <div id="faq8c" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-          <div class="accordion-body text-white2">
-            Necesitaré la información de tu negocio, logotipo, fotos y textos iniciales. Si aún no los tienes, puedo ayudarte a crearlos o recomendarte recursos para empezar.
+        <!-- Pregunta 6 -->
+        <div class="accordion-item bg-dark border-0">
+          <h2 class="accordion-header" id="faq8">
+            <button class="accordion-button collapsed bg-dark text-white fw-bold" type="button"
+              data-bs-toggle="collapse" data-bs-target="#faq8c">
+              ¿Qué necesito antes de comenzar mi página web?
+            </button>
+          </h2>
+          <div id="faq8c" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body text-white2">
+              Necesitaré la información de tu negocio, logotipo, fotos y textos iniciales. Si aún no los tienes, puedo
+              ayudarte a crearlos o recomendarte recursos para empezar.
+            </div>
           </div>
         </div>
-      </div>
 
+      </div>
     </div>
-  </div>
   </section>
 
   <!-- =====SECCION DE FOOTER ===== -->
   <footer class="bg-dark border-top text-muted py-4">
     <div class="container small d-flex flex-column flex-lg-row align-items-center justify-content-between gap-2">
-  
+
       <p class="mb-2 text-center text-white">
-        &copy; <a href="https://daniel-garrido.netlify.app/" class="link-light text-decoration-none">Daniel Garrido :</a> 
+        &copy; <a href="https://daniel-garrido.netlify.app/" class="link-light text-decoration-none">Daniel Garrido
+          :</a>
         todos los derechos reservados
       </p>
-  
+
       <div class="seccion_header_redes_sociales d-flex justify-content-center gap-2">
         <a class="text-white" target="_blank" href="https://www.instagram.com/daniel.garrido_/"><i
             class="bi bi-instagram fs-5"></i></a>
@@ -287,16 +331,11 @@
         <a class="text-white" target="_blank" href="https://www.linkedin.com/in/daniel-garrido-05138b225/"><i
             class="bi bi-linkedin fs-5"></i></a>
       </div>
-  
+
     </div>
   </footer>
 
-  <!-- Fixed WhatsApp -->
-  <a class="btn btn-success seccion_whatsapp_btn shadow" target="_blank" 
-     href="https://wa.me/529881033705?text=Hola%20Daniel,%20quiero%20informaci%C3%B3n%20sobre%20tu%20servicio%20web.">
-      <i class="fa-brands fa-whatsapp"></i>
-  </a>
-
+  
   <!-- =====SECCION DE MODALES  ===== -->
   <!-- Landing page -->
   <div class="modal fade" id="modalLandingBasica" tabindex="-1" aria-hidden="true">
@@ -317,11 +356,13 @@
             <li>Botón de WhatsApp</li>
             <li>2-3 secciones</li>
             <li>30 días de soporte gratis</li>
-            <li><span class="fw-bold">$3,500.00 MXN</span></li>
           </ul>
+          <span class="terminos">Aplica términos y condiciones*</span>
+          <p class="fs-5 fw-bold text-center mb-0 mt-4">$3,500.00 MXN</p>
         </div>
         <div class="modal-footer d-flex justify-content-center">
-          <a class="btn btn-info" target="_blank" href="https://wa.me/529881033705?text=Quiero%20la%20Landing%20B%C3%A1sica">Solicitar</a>
+          <a class="text-white btn btn-info" target="_blank"
+            href="https://wa.me/529881033705?text=Quiero%20la%20Landing%20B%C3%A1sica">Solicitar servicio</a>
         </div>
       </div>
     </div>
@@ -345,12 +386,13 @@
             <li>Formulario de contacto</li>
             <li>4-5 secciones</li>
             <li>30 días de soporte gratis</li>
-            <li><span class="fw-bold">$5,500.00 MXN</span></li>
           </ul>
-        
+          <span class="terminos">Aplica términos y condiciones*</span>
+          <p class="fs-5 fw-bold text-center mb-0 mt-4">$5,500.00 MXN</p>
         </div>
         <div class="modal-footer d-flex justify-content-center">
-          <a class="btn btn-info" target="_blank" href="https://wa.me/529881033705?text=Quiero%20el%20Sitio%20B%C3%A1sico">Solicitar</a>
+          <a class="text-white btn btn-info" target="_blank"
+            href="https://wa.me/529881033705?text=Quiero%20el%20Sitio%20B%C3%A1sico">Solicitar</a>
         </div>
       </div>
     </div>
@@ -369,9 +411,12 @@
             <li>Sitio web desarrollado a tu medida</li>
             <li><span class="fw-bold">Bajo cotización</span></li>
           </ul>
+          <span class="terminos">Aplica términos y condiciones*</span>
         </div>
+
         <div class="modal-footer d-flex justify-content-center">
-          <a class="btn btn-info" target="_blank" href="https://wa.me/529881033705?text=Quiero%20el%20Sitio%20Pro">Solicitar</a>
+          <a class="text-white btn btn-info" target="_blank"
+            href="https://wa.me/529881033705?text=Quiero%20el%20Sitio%20Pro">Solicitar</a>
         </div>
       </div>
     </div>
@@ -382,4 +427,5 @@
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="JS/script.js"></script>
 </body>
+
 </html>

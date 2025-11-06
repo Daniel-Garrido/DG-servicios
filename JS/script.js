@@ -14,3 +14,29 @@ document.addEventListener('DOMContentLoaded', () => {
   }, 400);
 
 });
+
+
+// Cambiar entre modo claro y oscuro
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleBtn = document.getElementById("themeToggle");
+  const body = document.body;
+
+  // Cargar modo guardado si existe
+  if (localStorage.getItem("theme") === "light") {
+    body.classList.add("light-mode");
+    toggleBtn.innerHTML = '<i class="bi bi-moon-fill"></i>';
+  }
+
+  toggleBtn.addEventListener("click", () => {
+    body.classList.toggle("light-mode");
+
+    // Cambiar icono y guardar preferencia
+    if (body.classList.contains("light-mode")) {
+      toggleBtn.innerHTML = '<i class="bi bi-moon-fill"></i>';
+      localStorage.setItem("theme", "light");
+    } else {
+      toggleBtn.innerHTML = '<i class="bi bi-sun-fill"></i>';
+      localStorage.setItem("theme", "dark");
+    }
+  });
+});
