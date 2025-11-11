@@ -1,4 +1,4 @@
-// Init AOS & helpers
+// funcionamiento de la librería AOS y Scrollspy de Bootstrap
 document.addEventListener('DOMContentLoaded', () => {
   AOS.init({
      once: true, 

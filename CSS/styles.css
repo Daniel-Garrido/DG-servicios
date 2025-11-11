@@ -107,6 +107,11 @@ body{
   box-shadow: none;
 }
 
+/* ==== Estilo a la seccion de enlaces ==== */
+.links-redes-sociales h3{
+  font-size: 20px;
+}
+
 /* =====Estilos al boton de WhatsApp ===== */
 .seccion_whatsapp_btn {
   position: fixed;
@@ -127,6 +132,8 @@ body{
 .fa-whatsapp {
   font-size: 1em; 
 }
+
+
 
 
 

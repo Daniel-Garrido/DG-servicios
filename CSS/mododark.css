@@ -38,13 +38,13 @@
 
 .light-mode .seccion_header_redes_sociales a{
     color: white !important;
-     background-color:  #c2c2c2 !important;
+     background-color:  #212529 !important;
 }
 
 .light-mode .links-redes-sociales{
     border: 1px solid #c2c2c2;
 }
-.light-mode .small{
+.light-mode small{
      color: #212529 !important;
 }
 .light-mode .accordion-button {
