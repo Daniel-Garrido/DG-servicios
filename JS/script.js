@@ -40,3 +40,22 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+// Cargar header y footer desde archivos externos
+document.addEventListener("DOMContentLoaded", () => {
+  loadComponent("footer", "Partials/footer.html");
+});
+
+async function loadComponent(id, file) {
+  //variable de contenedor de footer
+  const contenedor = document.getElementById(id);
+
+  try {
+    const footerResponse = await fetch(file);
+    if (!footerResponse.ok) throw new Error("No se pudo cargar " + file);
+    contenedor.innerHTML = await footerResponse.text();
+  } catch (error) {
+    console.error(error);
+    console.log("Error"+error)
+  }
+}

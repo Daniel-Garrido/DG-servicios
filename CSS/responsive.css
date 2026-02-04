@@ -17,4 +17,19 @@
   .seccion_tabs .nav-pills .nav-link {
     padding: 10px 15px;
   }
+
+  .links-redes-sociales{
+    padding: 5px 2px !important;
+  }
+
+  .links-redes-sociales h3{
+    font-size: 16px;
+    margin-bottom: 0px !important;
+  }
+
+  .text-link{
+    font-size: 12px !important;
+    
+  }
+  
 }
