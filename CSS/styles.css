@@ -1,0 +1,180 @@
+h1,h2{
+  font-size: 2.5rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+
+  margin: 0;
+  min-height: 100vh;
+
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/background.webp");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.bg-dark{
+  background-color: #282828 !important;
+}
+
+.bg-dark2{
+  background-color:  #3B3C40 !important;
+}
+
+.text-white2{
+  color: #c2c2c2;
+}
+
+.terminos{
+  font-size: 12px;
+  font-style: italic;
+}
+
+/* ===== HEADER ===== */
+.seccion_header_avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/*=== estilos a las redes sociales iconos ==*/
+.seccion_header_redes_sociales a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  border-radius: 8px;
+  color: black !important;
+  background-color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.seccion_header_redes_sociales a:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  background-color: black;
+  color: white !important;
+}
+
+
+
+/* ===== Seccion del menu de las Tabs (Enlaces, Servicios, proyectos) ===== */
+.contenedor-nav {
+  gap: 10px;
+}
+
+.seccion_tabs .nav-pills .nav-link {
+  padding: 10px 50px;
+  color: white;
+  background-color: #403c3b;
+  border: 1px solid #3B3C40;
+}
+
+.seccion_tabs .nav-pills .nav-link.active {
+  background-color: #272729;
+  border: 1px solid #c2c2c2;
+}
+
+/* ===== Seccion de los enlaces a redes sociales ===== */
+.links-redes-sociales {
+  margin-bottom: 5px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+ 
+}
+.links-redes-sociales:hover {
+  transform: translateY(-5px) scale(1.01);
+  border-color: rgba(255,255,255,0.18);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.55);
+}
+
+.links-redes-sociales h3{
+  font-size: 16px;
+}
+
+/* =====Seccion de  Servicios ===== */
+.seccion_servicios_card {
+  border: 1px solid white;
+  border-radius: 1rem;
+}
+
+/* =====Seccion de Proyectos ===== */
+.seccion_proyectos_card {
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.seccion_proyectos_card img {
+  object-fit: cover;
+  height: 150px;
+}
+
+.seccion_proyectos_card:hover {
+  transform: translateY(-4px);
+}
+
+/* seccion del contenedor del modal  */
+.modal-content {
+  color: white;
+  background-color:  #3B3C40 !important;
+}
+
+.btn-close{
+  background-color: white;
+}
+
+/* =====Seccion de Preguntas Frecuentes ===== */
+
+.accordion-button {
+  border-bottom: 1px solid #c2c2c2;
+}
+
+.accordion-button::after {
+  filter: invert(1);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #212529;
+  color: #fff;
+  box-shadow: none;
+}
+
+/* =====Estilos al boton de WhatsApp ===== */
+.seccion_whatsapp_btn {
+  position: fixed;
+  right: 18px;
+  bottom: 50px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.8em; 
+  background-color: #25D366;
+  color: #fff;
+  z-index: 1050;
+}
+
+.fa-whatsapp {
+  font-size: 1em; 
+}
+
+
+
+
+
