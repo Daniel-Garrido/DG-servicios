@@ -31,5 +31,9 @@
     font-size: 12px !important;
     
   }
+
+  .seccion_faq_contenedor{
+    width: 100%;
+  }
   
 }
